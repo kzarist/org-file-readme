@@ -12,15 +12,15 @@ print("block of code")
 #+end_src
 
 #+RESULTS:
-: blocks of code
+: block of code
 
 it even can skip the content of the codeblock, but display its corresponding result (very useful in Emacs)
-#+begin_src python :results output :exports result
+#+begin_src python :results output :exports results
 print("block of code")
 #+end_src
 
 #+RESULTS:
-: blocks of code
+: block of code
 
 #+begin_quote
 quote
