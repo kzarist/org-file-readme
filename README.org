@@ -3,6 +3,44 @@
 :END:
 #+TITLE: Readme
 
+
+* example of inline math with LaTeX in native org format
+$A_{a}=B_{b}$
+
+
+* example of math block with LaTeX in native org format
+this is the one I'd love to get support for
+#+BEGIN_SRC latex :exports both
+A_{a}=B_{b}
+#+END_SRC
+
+there are also other ways to write down block LaTeX in org, but I can't get them displayed via GH org renderer (they remain hidden - checkout RAW file to understand what I mean)
+
+
+#+BEGIN_LaTeX :exports both
+A_{a}=B_{b}
+this one is hidden
+#+END_LaTeX
+
+#+begin_export latex :exports both
+A_{a}=B_{b}
+this one is hidden too
+#+end_export
+
+\begin{equation}                     
+A_{a}=B_{b}                           
+\end{equation} 
+
+
+
+
+
+see [[https://github.com/nschloe/xdoc/pull/56][this PR]] for more details
+
+
+
+
+
 * GitHub does render org files
 ~and supports most of the features like inline code~
 
