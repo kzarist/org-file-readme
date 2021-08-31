@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       c32660e6-78f6-459f-bc4c-def8d6b9ed7c
+:END:
+#+TITLE: Readme
+
+* GitHub does render org files
+~and supports most of the features like inline code~
+
+or block of code with it's corresponding result
+#+begin_src python :results output
+print("block of code")
+#+end_src
+
+#+RESULTS:
+: blocks of code
+
+it even can skip the content of the codeblock, but display its corresponding result (very useful in Emacs)
+#+begin_src python :results output :exports result
+print("block of code")
+#+end_src
+
+#+RESULTS:
+: blocks of code
+
+#+begin_quote
+quote
+#+end_quote
+
+| table | with | header |
+|-------+------+--------|
+| a     | b    | c      |
+
+* COMMENT this will not get displayed
+or anything that's below it
