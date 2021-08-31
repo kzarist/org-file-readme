@@ -7,7 +7,7 @@
 ~and supports most of the features like inline code~
 
 or block of code with it's corresponding result
-#+begin_src python :results output
+#+begin_src python :results output :exports both
 print("block of code")
 #+end_src
 
